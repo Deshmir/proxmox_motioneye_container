@@ -49,7 +49,7 @@ TEMP_DIR=$(mktemp -d)
 pushd $TEMP_DIR >/dev/null
 
 # Download setup script
-wget -qL https://raw.githubusercontent.com/JedimasterRDW/proxmox_motioneye_container/master/setup.sh
+wget -qL https://raw.githubusercontent.com/Deshmir/proxmox_motioneye_container/master/setup.sh
 
 # Select storage location
 STORAGE_LIST=( $(pvesm status -content rootdir | awk 'NR>1 {print $1}') )
